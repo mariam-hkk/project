@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Lemonada:wght@300&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+ 
+ 
+    <link rel="stylesheet" href="https://stachpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Borel&family=Cairo&family=Edu+SA+Beginner&family=Montserrat:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+       <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.header{
+   min-height: 100vh;
+   width: 100%;
+   background-image: url(light.jpg);
+   background-color: rgba(0, 0, 0, 0.7);
+background-size: cover;
+    background-position: center;
+position: relative;
+opacity: 0.8;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+height: 200;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li
+{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+.nav-links ul li a
+{
+    color: #FFEC99;
+    text-decoration: none;
+font-size:15px;
+}
+.nav-links ul li::after
+{
+    content:'';
+    width: 0%;
+    height:2px;
+    background: #FFEC99;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #000000;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;}
+    .text-box h1{
+        font-size: 62px;
+
+    }
+    .text-box p{
+margin: 10px 0 40px;
+font-size: 14px;
+color: #000000;
+
+
+}
+.hero-btn{
+display: inline-block;
+text-decoration: none;
+color: #ffffff;
+border: 1px solid #ffffff;
+padding: 12px 34px;
+font-size: 13px;
+background: transparent;
+position: relative;
+cursor: pointer;
+}
+.hero-btn:hover
+{
+border:1px solid #111616;
+background: #FFEC99;
+transition: 1s;
+}   
+nav .fa{
+    display: none;
+} 
+@media(max-width:700px){
+    .text-box h1{
+       font-size: 20px; 
+    }
+    .nav-links ul li
+{
+    display:block;
+
+}
+.nav-links{
+   
+ transition: 1s;   
+}
+nav .fa{
+    display: block;
+    color: #ffffff;
+margin: 10px;
+font-size: 22px;
+cursor: pointer;
+}
+.nav-links ul{
+padding: 30px;
+}
+}
+.seals{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top:5%;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 22px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+grid-gap:20px;
+
+}
+.col-md{
+    flex-basis: 31%;
+    background: hsl(252, 100%, 91%);
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+    grid-gap:10px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.col-md:hover{
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.cams{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 50px;
+}
+.col-md-4{
+flex-basis: 32%;
+border-radius: 10px;
+margin-bottom: 30px;
+position: relative;
+overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.layer {
+    border-radius: 10px;
+
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    
+    background: rgba(174, 161, 246, 0.7);
+    scale:(1);
+}
+.layer h3{
+    width: 100%;
+    font-weight:500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+position: absolute;
+opacity:0 ;
+transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.col-md-3 img{
+    width: 100%;
+    display: block;
+}
+.footer{
+    background-color: #E4E4E4;
+   width: 100%;
+    text-align: center;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600px;
+}
+.icons .fa{
+    color: #3e4551;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #3e4551;
+}
+
+        </style>
+
+        <body>
+            
+
+        
+            <section class="header">
+                <nav>
+                <a href="index.html">
+                    <img src="0-9333_electrical-work-logo-hd-png-download.png">
+                </a>
+
+                <div class="nav-links" id="nav-links">
+                   
+
+                    <button  class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#toggleMobileMenu" 
+                    aria-controls="toggleMobileMenu" 
+                    aria-label="Toggle navigation">
+                    <div class="fa">
+                        <a class="fa fa-bars" onclick="showmenu()"></a>
+                    </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+
+            <ul>
+                <li>
+                    <a href="">HOME</a>
+                </li>
+                <li>
+                    <a href="">ABOUT</a>
+                </li>
+                <li>
+                    <a href="">PRODECTS</a>
+                </li>
+                <li>
+                    <a href="">BLOG</a>
+                </li>
+                <li>
+                    <a href="">CONTECT</a>
+                </li>
+            </ul>
+
+
+           </div>
+
+        </nav>
+       <div class="text-box">
+<h1>
+    electrones shop
+</h1>
+<h6>
+    To invent smart devices, robots, and small projects, 
+    you need tools. All you have to do is follow us 
+    to get the best tools. 
+</h6>
+<a href="" class="hero-btn"> visit to know more</a>
+       </div>
+
+</div>
+    </section>    
+    <!---items for seal-->
+    <section class="seals">
+        <h1>
+            the sales
+        </h1>
+        <h5>
+            also lean who to make it!
+        </h5>
+        <div class="row">
+            <div class="col-md">
+                <h3>
+                    3D printing
+                </h3>
+                <p>
+                    The best 3D printer is 
+                    the one you can afford.
+                     These are printers to suit 
+                     those on a tighter budget.
+                </p>
+                
+                </div>
+                <div class="col-md">
+                 <h3>
+                    implementation 
+                 </h3>
+                 <p>
+                    Full service
+                     manufacturing 
+                    Custom material 
+                    solutions provider
+
+                 </p>   
+                </div>
+
+
+                <div class="col-md">
+                    <h3>
+   PCB manufacturing
+                    </h3>
+                    <p>
+                        Full service manufacturing 
+                        Custom material solutions 
+                        provider
+
+                        </p>
+                        </div>
+
+                
+                   </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="cams">
+<h1>
+    others
+</h1>
+<h5>
+    follow for more
+</h5>
+</br>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="img">
+        <img src="Arduino.jpg" >
+    <div class="layer">
+        <h3>
+            arduino UNO
+        </h3>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="img">
+            <img src="Dasduino.PNG" style="height: 400px;">
+    <div class="layer">
+        <h3>
+            Dasduino
+        </h3>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="img">
+            <img src="Microchip-Introduc.jpg" >
+    <div class="layer">
+        <h3>
+            Microchip
+        </h3>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <!---footer-->
+    <div class="footer">
+<div class="container text-center">
+    <h2>
+        about us
+    </h2>
+    <h5>
+        you can contact us through
+    </h5>
+    <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>       
+            <i class="fa fa-twitter"></i>      
+        </div>
+
+    </div>
+    <h5>
+        made with <i class="fa fa-heart-o"></i> by mariam
+    </h5>
+</div>
+   
+    </div>
+  </div>
+    <!--java-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+   function showmenu(){
+       navLinks.style.right="0";
+   }
+   function hidemenu(){
+       navLinks.style.right="-200px";
+   }
+   </script>  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+    </body>
+    </html>
